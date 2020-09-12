@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>surd weather</title>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="manifest" href="manifest.json">
+		<link rel="apple-touch-icon" href="/surd/logo3.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#aee0eb">
+  <meta name="theme-color" content="#aee0eb">
+	</head>
+	<body>
+		<header class="container header">
+			<form action="submit" class="search__bar" id="search-form">
+				<input type="text" name="search-input"id="search-input"class="search__input" placeholder="Enter location"required/>
+				<button type="submit"class="search__button"aria-label="Search for location data"><i class="fa fa-search"></i>
+				</button>
+			</form>
+		</header>
+		<main class="container">
+			<section>
+				<div class="weather">
+					<div
+						class="weather-conditions flex-center flex-column flex-justify-between"
+					>
+						<div class="weather-location">
+							<p class="weather__location" id="weather-location">
+								New York, US
+							</p>
+						</div>
+						<div class="weather-image-container">
+							<img
+								id="weather-icon"
+								src="https://openweathermap.org/img/wn/11d.png"
+								alt=""
+								srcset=""
+							/>
+						</div>
+						<div class="weather-status">
+							<p id="main-forecast-status">Clouds</p>
+						</div>
+					</div>
+
+					<div class="weather-details">
+						<p
+							class="weather-temperature"
+							id="main-forecast-temperature"
+						>
+							23.01
+						</p>
+						<span class="weather-units"><sup>o</sup> C </span>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="forecast-section__heading">Hourly forecast</h2>
+				<div
+					class="hourly-forecast__container"
+					id="hourly-forecast-container"
+				></div>
+			</section>
+
+			<section>
+				<h2 class="forecast-section__heading">Daily forecast</h2>
+				<div
+					class="daily-forecast__container"
+					id="daily-forecast-container"
+				></div>
+			</section>
+		</main>
+
+		<script src="/js/app.js"></script>
+		<script src="/js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+{
+    "name": "Weather App",
+    "short_name": "Weather",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#aee0eb",
+    "theme_color": "#aee0eb",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "/surd/logo.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/surd/logo2.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "/surd/logo3.png",
+        "type": "image/png",
+        "sizes": "180x180"
+      },
+      {
+        "src": "/surd/logo4.png",
+        "type": "image/png",
+        "sizes": "48x48"
+      },
+      {
+        "src": "/surd/logo5.png",
+        "type": "image/png",
+        "sizes": "16x16"
+      },
+      {
+        "src": "/surd/logo6.png",
+        "type": "image/png",
+        "sizes": "32x32"
+      }
+    ]
+  }
